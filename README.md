@@ -1,4 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo App with Recoil
+
+Todo app for describing how to use Recoil
+
+## How to use Recoil
+
+- Key Objects
+  - `atom`
+  - `selector`
+- Hooks to get and set atom
+  - `useRecoilState`
+    - `useState` と同じシグネチャーのAPI
+    - `[value setValue] = useRecoilState($key)`
+  - `useRecoilValue`
+    - value だけを取得するためのAPI
+    - `value = useRecoilValue($key)`
+  - `useSetRecoilState`
+    - 更新関数だけを取得するためのAPI
+    - 対象の atom が更新されてもコンポーネントの再レンダリングが走らないというメリットがある
+    - `setValue = useSetRecoilState($key)`
+
+
+Ref:
+
+- [Recoil Document](https://recoiljs.org/docs/introduction/getting-started/)
+- [ステート管理を超えるRecoil運用の考え方](https://speakerdeck.com/uhyo/sutetoguan-li-wochao-erurecoilyun-yong-nokao-efang)
+- [Recoil ドキュメント入門](https://future-architect.github.io/articles/20230215a/)
 
 ## Getting Started
 
